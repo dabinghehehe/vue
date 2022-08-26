@@ -31,7 +31,7 @@
         </table>
     </div> -->
     <div>
-        <Hello></Hello>
+        <Layout></Layout>
     </div>
 
 
@@ -190,9 +190,16 @@ import { shallowRef, triggerRef, customRef, reactive, toRef, computed, ref, watc
 // const stopWatch = () => stop()
 
 import Hello from './components/HelloWorld.vue';
-
+import layout from './layout/index.vue'
+import Layout from './layout/index.vue';
 
 </script>
 
-<style>
+<style lang="less">
+html,
+body,
+#app {
+    height: 100%;
+    overflow: hidden;
+}
 </style>
