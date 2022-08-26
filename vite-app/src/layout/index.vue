@@ -1,7 +1,7 @@
 <template>
     <div class="layout">
-        <Menu></Menu>
-        <div>
+        <Menu title="我想穿一条裤子"></Menu>
+        <div class="layout-right">
             <Header></Header>
             <Content></Content>
         </div>
@@ -16,5 +16,11 @@ import Content from './Content/index.vue';
 <style lang="less" scoped>
 .layout {
     display: flex;
+    height: 100%;
+    overflow: hidden;
+
+    &--right {
+        flex: 1;
+    }
 }
 </style>
